@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "first-react-app",
-    "slug": "first-react-app",
+    "name": "Aora",
+    "slug": "aoraproject",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "Aora",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -13,7 +13,10 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Enabling Face ID allows you quick access to Aora"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -31,6 +34,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "4ef29333-ede9-4cf9-a4bd-8becc84f6a23"
+      }
+    },
+    "owner": "juanmadator"
   }
 }
